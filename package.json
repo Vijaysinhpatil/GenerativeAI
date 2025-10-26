@@ -1,0 +1,21 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./OptinalParameter/parameter.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./OptinalParameter/parameter.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.27.0",
+    "dotenv": "^17.2.3",
+    "nodemon": "^3.1.10",
+    "openai": "^6.7.0",
+    "tiktoken": "^1.0.22"
+  }
+}

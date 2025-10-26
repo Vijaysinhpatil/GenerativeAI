@@ -1,0 +1,10 @@
+# =========================
+# IDE / Editor files
+# =========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+node_modules/
+.env

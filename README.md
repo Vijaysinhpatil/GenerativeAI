@@ -1,2 +1,2 @@
 # GenerativeAI
-Learning More About LLMs
+Generative AI with help of Google Gemini(LLM)

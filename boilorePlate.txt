@@ -1,0 +1,29 @@
+import { GoogleGenAI } from "@google/genai";
+import dotenv from 'dotenv'
+dotenv.config({})
+
+const model = "gemini-2.5-flash"
+const prompt = "tell me about yourself"
+
+const ai = new GoogleGenAI({
+    apiKey : process.env.GEMINI_KEY
+})
+
+const run = async() => {
+   
+      try {
+        
+        const response = await ai.models.generateContent({
+            model : model ,
+
+            contents : {
+                role : 'user',
+                parts : [{ text : prompt }]
+            }
+        })
+        console.log(response.text);
+      } catch (error) {
+        console.error("Error while Getting Response => " , error);
+      }
+}
+run()
